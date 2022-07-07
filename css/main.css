@@ -395,6 +395,14 @@ textarea {
          url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
+body {
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -403,11 +411,56 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    background-color: black;
+.container {
+    width: 1060px;
+    margin: 0 auto;
 }
 
-.wrapper {
-    max-width: 1060px;
-    margin: 0 auto;
+.header {
+    background: url(/img/Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header__menu {
+    padding-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__point {
+    margin-right: 82px;
+}
+
+.header__point-link {
+    text-decoration: none;
+    color: white;
+}
+
+.header__text-under-menu {
+    margin-top: 181px;
+
+    width: 620px;
+    color: white;
+}
+
+.header__big-text {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.header__small-text {
+    width: 546px;
+    margin-top: 22px;
+
+    font-size: 16px;
+    font-weight: 400;
 }
