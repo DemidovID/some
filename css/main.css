@@ -416,11 +416,13 @@ html {
     margin: 0 auto;
 }
 
+/* header styles start */
+
 .header {
-    background: url(/img/Image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .header__menu {
@@ -440,11 +442,22 @@ html {
     margin-right: 82px;
 }
 
+.header__point:last-child {
+    margin-right: 0;
+}
+
+
 .header__point-link {
     text-decoration: none;
     color: white;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
 }
 
+.header__point-link:hover, .header__point-link:focus, .header__point-link:active {
+    opacity: .75;
+}
 .header__text-under-menu {
     margin-top: 181px;
 
@@ -464,3 +477,15 @@ html {
     font-size: 16px;
     font-weight: 400;
 }
+
+/* header styles end */
+
+/* intro styles start */
+
+.intro {
+    background: url(/img/Hero.jpg) no-repeat center;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* intro styles end */
