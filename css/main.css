@@ -395,14 +395,6 @@ textarea {
          url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
-body {
-    font-family: 'Lato';
-    font-style: normal;
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 1.2;
-}
-
 html {
     box-sizing: border-box;
 }
@@ -411,12 +403,16 @@ html {
     box-sizing: inherit;
 }
 
-.container {
+body {
+    font-family: 'Lato';
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.wrapper {
     width: 1060px;
     margin: 0 auto;
 }
-
-/* header styles start */
 
 .header {
     position: fixed;
@@ -425,67 +421,95 @@ html {
     width: 100%;
 }
 
-.header__menu {
-    padding-top: 65px;
+.header__header-flex {
+    margin-top: 62px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .header__list {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .header__point {
     margin-right: 82px;
 }
 
+.header__point:hover, .header__point:active, .header__point:focus {
+    opacity: .75;
+}
+
 .header__point:last-child {
     margin-right: 0;
 }
 
-
 .header__point-link {
     text-decoration: none;
     color: white;
+    font-weight: 400;
     font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
 }
-
-.header__point-link:hover, .header__point-link:focus, .header__point-link:active {
-    opacity: .75;
-}
-.header__text-under-menu {
-    margin-top: 181px;
-
-    width: 620px;
-    color: white;
-}
-
-.header__big-text {
-    font-size: 50px;
-    font-weight: 500;
-}
-
-.header__small-text {
-    width: 546px;
-    margin-top: 22px;
-
-    font-size: 16px;
-    font-weight: 400;
-}
-
-/* header styles end */
-
-/* intro styles start */
 
 .intro {
+    padding-top: 260px;
+
     background: url(/img/Hero.jpg) no-repeat center;
     height: 100vh;
     background-size: cover;
 }
 
-/* intro styles end */
+.wrapper_title {
+    margin-bottom: 22px;
+
+    width: 619px;
+    color: white;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.intro__subtitle {
+    width: 546px;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 59px;
+}
+
+.search-form__info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-form__field {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    background-color: transparent;
+    background: url(/img/Oval.svg) no-repeat left top;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    margin-right: 60px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    width: 297px;
+}
+.search-form__field::placeholder {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    opacity: 1;
+}
+
+.search-form__submit {
+    text-transform: uppercase;
+    color: white;
+    background-color: #1B7DFF;
+    padding: 15px 40px;
+    border: none;
+}

@@ -1,0 +1,132 @@
+<header class="header">
+        <div class="container">
+            <div class="header__menu">
+                <div class="header__logo">
+                    <a href="/" class="header__logo-link">
+                        <img src="/img/odigo-Logo.svg" alt="logo" class="header__logo-img">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__point">
+                            <a href="/" class="header__point-link">Articles</a>
+                        </li>
+                        <li class="header__point">
+                            <a href="/" class="header__point-link">Locations</a>
+                        </li>
+                        <li class="header__point">
+                            <a href="/" class="header__point-link">Videos</a>
+                        </li>
+                        <li class="header__point">
+                            <a href="/" class="header__point-link">Sign in</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__text-under-menu">
+                <div class="header__big-text">Discover Amazing places in Japan </div>
+                <div class="header__small-text">Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="intro"></section>
+    </main>
+
+
+    /* css */
+    body {
+        font-family: 'Lato';
+        font-style: normal;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.2;
+    }
+    
+    html {
+        box-sizing: border-box;
+    }
+    
+    *, *::before, *::after {
+        box-sizing: inherit;
+    }
+    
+    .container {
+        width: 1060px;
+        margin: 0 auto;
+    }
+    
+    /* header styles start */
+    
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    .header__menu {
+        padding-top: 65px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    
+    .header__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .header__point {
+        margin-right: 82px;
+    }
+    
+    .header__point:last-child {
+        margin-right: 0;
+    }
+    
+    
+    .header__point-link {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    
+    .header__point-link:hover, .header__point-link:focus, .header__point-link:active {
+        opacity: .75;
+    }
+    .header__text-under-menu {
+        margin-top: 181px;
+    
+        width: 620px;
+        color: white;
+    }
+    
+    .header__big-text {
+        font-size: 50px;
+        font-weight: 500;
+    }
+    
+    .header__small-text {
+        width: 546px;
+        margin-top: 22px;
+    
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    /* header styles end */
+    
+    /* intro styles start */
+    
+    .intro {
+        background: url(/img/Hero.jpg) no-repeat center;
+        height: 100vh;
+        background-size: cover;
+    }
+    
+    /* intro styles end */
