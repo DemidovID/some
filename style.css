@@ -546,13 +546,34 @@ body {
     line-height: 24px;
 }
 
-.b__cards {
-    display: grid;
-    grid-template-columns: (3, 1fr);
-
+.benefits__title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
 }
 
-display: grid;
+.b__cards {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 55px;
     padding: 0 100px;
+}
+
+.ben__wrapper {
+    width: 1262px;
+    margin: 0 auto;
+}
+
+.b__pic {
+    margin-bottom: 37px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.b__text-bg {
+    margin-bottom: 27px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
