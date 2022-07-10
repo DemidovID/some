@@ -434,41 +434,43 @@ html {
     box-sizing: inherit;
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
-    font-family: 'Poppins';
+    font-family: 'Lato';
+
+}
+
+.wrapper {
+    width: 1060px;
+    margin: 0 auto;
 }
 
 .header {
-    padding-top: 22px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header__flex {
+.header__menu-flex {
+    /* отступ сверху */
+    padding-top: 62px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .header__list {
-    margin-left: 283px;
     display: flex;
-}
-
-.lng {
-    margin-left: 332px;
+    flex-wrap: wrap;
 }
 
 .header__point {
-    margin-right: 35px;
-    
+    margin-right: 82px;
 }
 
 .header__point:last-child {
@@ -476,32 +478,81 @@ body {
 }
 
 .header__point-link {
-    text-transform: uppercase;
     color: white;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 22px;
 }
 
-.header__point-link:hover, .header__point-link:focus, .header__point-link:active {
+.header__point-link:hover, .header__point-link:active, .header__point-link:focus {
     opacity: .75;
 }
 
-.lng-ru, .lng-en {
-    text-transform: uppercase;
-    color: white; 
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 22px;
-}
-.lng-ru {
-    color: #B7B7B7;
-}
-
 .intro {
-    background: url(/img/road-g9875459d1_1920\ 1.jpg) no-repeat center;
-    min-height: 100vh;
+    padding-top: 260px;
+    
+    background: url(/img/Hero.jpg) no-repeat center;
+    height: 100vh;
     background-size: cover;
 }
+
+.intro__title {
+    color: white;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 22px;
+}
+
+.intro__subtitle {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+
+.form__button {
+    border: 0;
+    padding: 15px 40px;
+    background: #1B7DFF;
+    color: white;
+}
+
+.form__button:hover, .form__button:focus, .form__button:active  {
+    background: #185bb3;
+}
+
+.form__input {
+    border: 0;
+    background: transparent;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    width: 297px;
+    border-bottom: 2px solid #BFC0C5;
+    margin-right: 61px;
+    padding-bottom: 22px;
+    padding-left: 43px;
+    background: url(/img/Oval.svg) no-repeat left 2px;
+}
+
+.form__input::placeholder {
+    opacity: 1;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.b__cards {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+
+}
+
+display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 55px;
+    padding: 0 100px;
