@@ -440,13 +440,21 @@ img {
 
 body {
     font-family: 'Lato';
+    color: #000;
 
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
 }
 
 .wrapper {
-    width: 1060px;
+    max-width: 1060px;
     margin: 0 auto;
 }
+
+/* start header */
 
 .header {
     position: fixed;
@@ -489,15 +497,21 @@ body {
     opacity: .75;
 }
 
+/* end header */
+
+/* start intro */
+
 .intro {
-    padding-top: 260px;
+    padding-top: 263px;
     
     background: url(/img/Hero.jpg) no-repeat center;
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
+    margin-bottom: 150px;
 }
 
 .intro__title {
+    max-width: 619px;
     color: white;
     font-weight: 500;
     font-size: 50px;
@@ -506,74 +520,183 @@ body {
 }
 
 .intro__subtitle {
+    margin-bottom: 59px;
+    max-width: 546px;
     color: white;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 60px;
+    margin-bottom: 59px;
 }
 
-.form__button {
-    border: 0;
-    padding: 15px 40px;
-    background: #1B7DFF;
-    color: white;
-}
+/* end intro */
 
-.form__button:hover, .form__button:focus, .form__button:active  {
-    background: #185bb3;
+/* start form */
+
+.form__flex {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .form__input {
-    border: 0;
+    max-width: 297px;
+    margin-right: 60px;
     background: transparent;
+    background: url(/img/Oval.svg) no-repeat left 4px;
+    background-size: 20px;
     color: white;
+    border: 0;
+    padding-left: 43px;
+    padding-bottom: 22px;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    width: 297px;
     border-bottom: 2px solid #BFC0C5;
-    margin-right: 61px;
-    padding-bottom: 22px;
-    padding-left: 43px;
-    background: url(/img/Oval.svg) no-repeat left 2px;
 }
 
 .form__input::placeholder {
     opacity: 1;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
+}
+
+.form__button {
+    /* text-transform: uppercase; */
+    color: white;
+    border: 0;
+    padding: 15px 40px;
+    background: #1B7DFF;
+}
+
+.form__button:hover, .form__button:focus, .form__button:active {
+    background: #015bd0;
+}
+
+/* end form */
+
+/* Start benefits */
+
+.benefits__wrapper {
+    max-width: 1262px;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+    position: relative;
 }
 
 .benefits__title {
+    width: 100%;
     font-weight: 500;
     font-size: 35px;
     line-height: 42px;
+    padding: 100px 100px 88px 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background-color: #fff;
 }
 
-.b__cards {
+.benefits__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 55px;
     padding: 0 100px;
 }
 
-.ben__wrapper {
-    width: 1262px;
-    margin: 0 auto;
+.benefits__card {
+    grid-column: span 1;
 }
 
-.b__pic {
+.benefits__card-img {
     margin-bottom: 37px;
+    max-width: 66px;
+}
+
+.benefits__card-thumb {
+    display: block;
+}
+
+.benefits__card-title {
+    margin-bottom: 26px;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
 }
 
-.b__text-bg {
-    margin-bottom: 27px;
+.benetits__card-desc {
+    margin-bottom: 39px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
 }
+
+.benefits__card-link {
+    text-decoration: none;
+    color: #006DFE;
+}
+
+
+
+
+/* End benefits */
+
+
+
+/* Start test-block */
+
+.benefits__wrap {
+    max-width: 1262px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.benefits-2__title {
+    width: 100%;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    padding: 100px 100px 88px 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    background-color: #fff;
+}
+
+.benefits-2__cards {
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 55px;
+}
+
+.benefits-2__card {
+    grid-column: span 1;
+}
+.benefits__img{
+    margin-bottom: 37px;
+}
+
+.benefits__card2-title {
+    margin-bottom: 26px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.benefits__card2-desc {
+    margin-bottom: 39px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.benefits__card2-link {
+    text-decoration: none;
+    color: #006DFE;
+}
+
+.benefits__card2-link:hover, .benefits__card2-link:focus, .benefits__card2-link:active {
+    color: #0050b9;
+}
+
+/* End test-block*/
