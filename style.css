@@ -435,7 +435,11 @@ html {
 }
 
 img {
-    max-width: 100%;
+    /* Параметр, чтобы изображение никогда не выходило из контейнера, в котором
+    оно находиться */
+    max-width: 100%; 
+    /* Параметр, чтобы изображение всегда сжималось пропорциаонально */
+    height: auto;
 }
 
 body {
@@ -455,7 +459,7 @@ body {
 }
 
 .wrapper-full {
-    width: 1262px;
+    max-width: 1262px;
     margin: 0 auto;
 }
 
@@ -464,7 +468,7 @@ body {
     font-size: 35px;
     line-height: 42px;
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 10px;   
 }
 
 .section-title::after {
@@ -473,12 +477,12 @@ body {
     width: 253px;
     height: 3px;
     background-color: #006DFE;
+    position: absolute;
     bottom: 0;
     left: 0;
 }
 
 /* start header */
-
 .header {
     position: fixed;
     top: 0;
@@ -519,11 +523,9 @@ body {
 .header__point-link:hover, .header__point-link:active, .header__point-link:focus {
     opacity: .75;
 }
-
 /* end header */
 
 /* start intro */
-
 .intro {
     padding-top: 263px;
     
@@ -551,11 +553,9 @@ body {
     line-height: 24px;
     margin-bottom: 59px;
 }
-
 /* end intro */
 
 /* start form */
-
 .form__flex {
     display: flex;
     flex-wrap: wrap;
@@ -592,11 +592,9 @@ body {
 .form__button:hover, .form__button:focus, .form__button:active {
     background: #015bd0;
 }
-
 /* end form */
 
 /* Start benefits */
-
 .benefits {
     margin-bottom: 131px;
 }
@@ -670,102 +668,17 @@ body {
 .benefits__card-link:hover, .benefits__card-link:focus {
     background: url(/img/Shape.png) no-repeat right center;
 }
-
 /* End benefits */
 
 /* Start places */
 
-.places__title-more {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 36px;
+.places_title {
+    margin-bottom: 36px;    
 }
-
-.places__link-ViewAll {
-    display: inline-block;
-    margin-right: 10px; 
-    max-width: 142px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;   
-    color: #006DFE;
-    text-decoration: none;
-    background: url(/img/Shape.png) no-repeat 95% center;
-    padding-right: 59px;
-    transition: .2s all;
-}
-
-.places__title {
-    margin-right: 15px;
-    margin-bottom: 400px;
-}
-
-.places__link-ViewAll:hover, .places__link-ViewAll:focus {
-    background: url(/img/Shape.png) no-repeat right center;
-    opacity: .85;
-}
-
 
 /* End places */
 
 /* Start test-block */
  
-.wrapper_benefits {
-    max-width: 1262px;
-    margin: 0 auto;
-    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
-}
-
-.wrapper_title-2 {
-    padding: 93px 0px 120px 99px;
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 42px;
-}
-
-.benefits__cards-2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 55px;
-    padding: 0 100px;
-}
-
-.benefits__img {
-    margin-bottom: 37px;
-    max-width: 100%;
-}
-
-.benefits__card-title {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 26px;
-}
-
-.benefits__card-desc {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    max-width: 317px;
-    margin-bottom: 39px;
-}
-
-.benefits__card-link-more {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #006DFE;
-    background: url(/img/Shape.png) no-repeat 95% center;
-    padding-right: 63px;
-    transition: .2s all;
-}
-
-.benefits__card-link-more:hover {
-    background: url(/img/Shape.png) no-repeat right center;
-    color: #5fa3fb;
-}
 
 /* End test-block*/

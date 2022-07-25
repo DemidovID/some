@@ -1,0 +1,48 @@
+body {
+    background: gray;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper-game {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Start header */
+
+.header__menu {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.header__link-img {
+    max-width: 200px;
+    margin-right: 200px;
+}
+
+.header__balance-point-link-img {
+    max-width: 200px;
+    margin-right: 400px;
+}
+
+.header__user-img {
+    max-width: 200px;
+}
+
+/* End header */
+
+/* Start game-block */
+
+.game-box {
+    height: 500px;
+    width: 500px;
+    background: black;
+}
+
+/* End game-block */
