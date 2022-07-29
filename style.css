@@ -821,7 +821,7 @@ body {
     transition: .2s all;
 }
 
-.tour-link:hover .tour-link:focus {
+.tour-link:hover {
     background: url(/img/Shape.png) no-repeat right center;
 }
 
