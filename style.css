@@ -777,6 +777,59 @@ body {
 }
 /* End places */
 
+/* Start Tours */
+
+.tours__wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tours {
+    margin-bottom: 139px;
+}
+
+.tours__tour {
+    margin-bottom: 77px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 108px;
+    align-items: center;
+}
+
+.tour__title {
+    margin-bottom: 85px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.tour__desc {
+    margin-bottom: 58px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.tour-link {
+    padding-right: 59px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #006DFE;
+    background: url(/img/Shape.png) no-repeat 95% center;
+    transition: .2s all;
+}
+
+.tour-link:hover {
+    background: url(/img/Shape.png) no-repeat right center;
+}
+
+
+
+
+/* End Tours */
+
 /* Start test-block */
 
 
