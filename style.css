@@ -493,6 +493,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    /* Delete later */
+    z-index: 5;
 }
 
 .header__menu-flex {
@@ -778,12 +780,6 @@ body {
 /* End places */
 
 /* Start Tours */
-
-.tours__wrapper-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
 .tours {
     margin-bottom: 139px;
 }
@@ -825,7 +821,13 @@ body {
     background: url(/img/Shape.png) no-repeat right center;
 }
 
+.tour-img {
+    transition: .2s all;
+}
 
+.tour-img:hover {
+    transform: scale(1.05);
+}
 
 
 /* End Tours */
@@ -833,4 +835,4 @@ body {
 /* Start test-block */
 
 
-/* End test-block*/
+/* End test-block */
