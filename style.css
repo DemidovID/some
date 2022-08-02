@@ -838,6 +838,88 @@ body {
 .top-places__title {
     margin-bottom: 54px;
 }
+
+.top__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 57px;
+}
+
+.top__card-img {
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.top__card-stats {
+    padding: 16px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(21, 24, 36, 0.6);
+    justify-content: flex-end;
+}
+.top__card-title {
+    margin: 0 auto 0 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+}
+
+.top__card-likes {
+    margin-right: 14px;
+    padding-right: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    background: url(/img/Like.svg) no-repeat right;
+    transition: .1s all;
+}
+
+.top__card-likes:hover {
+    transform: scale(1.05);
+}
+
+.top__card-comments {
+    padding-right: 23px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background: url(/img/Mesage.svg) no-repeat right;
+    transition: .1s all;
+}
+
+.top__card-comments:hover {
+    transform: scale(1.05);
+}
+
+.top__card-desc {
+    margin-bottom: 31px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.top__card-link {
+    padding: 12px 19px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    background: #006DFE;
+}
+
+.top__card-link:hover, .top__card-link:active, .top__card-link:focus {
+    background: #015bd0;
+}
+
 /* top places end */
 
 /* Start test-block */
