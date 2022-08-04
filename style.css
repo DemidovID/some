@@ -494,7 +494,11 @@ body {
     left: 0;
     width: 100%;
     /* Delete later */
-    z-index: 5;
+    /* z-index: 5; */
+}
+
+.header__active {
+    background: #0E1D28;
 }
 
 .header__menu-flex {
@@ -932,6 +936,8 @@ body {
     background: #015bd0;
 }
 /* top places end */
+
+
 
 /* Start test-block */
 
