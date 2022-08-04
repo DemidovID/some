@@ -845,9 +845,19 @@ body {
     grid-gap: 57px;
 }
 
+.top__card {
+    display: flex;
+    flex-direction: column;
+}
+
 .top__card-img {
     margin-bottom: 45px;
     position: relative;
+    transition: .2s all;
+}
+
+.top__card-img:hover {
+    transform: scale(1.03);
 }
 
 .top__card-stats {
@@ -914,16 +924,16 @@ body {
     line-height: 24px;
     color: white;
     background: #006DFE;
+    max-width: 118px;
+    margin: auto 0 0 0;
 }
 
 .top__card-link:hover, .top__card-link:active, .top__card-link:focus {
     background: #015bd0;
 }
-
 /* top places end */
 
 /* Start test-block */
-
 
 
 
