@@ -12,21 +12,80 @@
 // alert(cat);
 // console.log(phone);
 
-var num = 423,
-    string = 'i like tea', 
-    Bool = true, 
-    Null = null, 
-    undef = undefined;
+// var num = 423,
+//     string = 'i like tea', 
+//     Bool = true, 
+//     Null = null, 
+//     undef = undefined;
 
-console.log(typeof num);
-console.log(typeof string);
-console.log(typeof Bool);
-console.log(typeof Null);
-console.log(typeof undef);
+// console.log(typeof num);
+// console.log(typeof string);
+// console.log(typeof Bool);
+// console.log(typeof Null);
+// console.log(typeof undef);
 
-console.log(typeof typeof 1);
+// console.log(typeof typeof 1);
 
-// Объектные типы
+// // Объектные типы
 
-var obj = {name: "Cat likes to sleep"}, 
-    array = [1, 2, 3]
+// var obj = {name: "Cat likes to sleep"}, 
+//     array = [1, 2, 3]
+
+// console.log(5);
+
+// console.log(0432);
+
+// Wrapper object
+// Создание объекта
+console.log('Создание объекта')
+
+
+// Вызов и создание объекта
+// var N = new Number(4000),
+
+
+
+// Вызывать методы можно и простых переменных
+
+    // q = 765;
+//     console.log(q);
+//     console.log(typeof q);
+// console.log(N)
+// console.log(typeof N)
+// console.log(N.toFixed(5))
+// console.log(q.toFixed(2))
+
+// console.log("---")
+// console.log(Number)
+// console.log("---")
+
+// n = 198;
+// console.log(typeof n)
+
+
+// Create a object
+// Нужно для работы методов
+// var toster = new Number(5000);
+
+// var legs = new Number(1000);
+// console.log(typeof legs)
+
+// var arm = 4000; 
+// console.log(arm.toFixed(5));
+
+// arm = arm + 0.44;
+// console.log(arm);
+
+// // в JS можно подключать методы и простым переменным
+// // Js во время компиляции создает объект и уничтожат его 
+// var train = 4;
+// console.log(train.toFixed(2))
+
+// console.log(toster);
+// console.log(typeof toster);
+
+// Операторы
+
+console.log(+10);
+console.log(-10);
+
