@@ -1,16 +1,19 @@
-// // alert("Зайди в консоль :)")
-// // console.log(":-)");
+// alert("Зайди в консоль :)")
+console.log(":-)");
 
-// // var cat;
 
-// // cat = 534538475 * 457345348
+// инициализция 
+// var cat;
 
-// // console.log(cat)
+// cat = 534538475 * 457345348
 
-// // var cat = 'My cat likes to sleep', phone = 'iPhone';
+// console.log(typeof cat)
+
+// Инициализация двух переменных
+// var cat = 'My cat likes to sleep', phone = 'iPhone';
 
 // // alert(cat);
-// // console.log(phone);
+// console.log(typeof phone);
 
 // // var num = 423,
 // //     string = 'i like tea', 
@@ -147,15 +150,144 @@
 // console.log(-100 / 0);
 // console.log(0 / 0)
 
-console.log(0.2 + 0.1);
+// console.log(0.2 + 0.1);
 
-console.log(0.2 + 0.4);
+// console.log(0.2 + 0.4);
 
-console.log(0.2 + 0.6);
+// console.log(0.2 + 0.6);
 
-console.log(0.1 + 0.1);
-console.log(0.1 + 0.2);
-console.log(0.5 + 0.4);
+// console.log(0.1 + 0.1);
+// console.log(0.1 + 0.2);
+// console.log(0.5 + 0.4);
+
+// Likes objects
+
+// var cat = 1;
+
+// console.log('cat');
+// console.log(cat.toFixed(2));
+// console.log(typeof cat);
+// // it's num
+
+// // object
+
+// var tost = new Number(1);
+
+// // it's an object
+// console.log(typeof tost);
+
+// Строки
+
+// Using a dif types of ''
+
+console.log('something "what" text')
+
+// Хранение одного символа
+console.log("c".length);
+
+// Likes python
+
+// really likes python
+
+// n = new line
+console.log("First string \nSecond string")
+
+var s = "Igor";
+
+s = s + " it's cool :)";
+
+
+console.log(s);
+
+console.log(s.charAt(3));
+
+console.log(typeof s);
+
+// var q = new Number("Demidov");
+
+// console.log(typeof q);
+
+// Из объекта нельзя вернуть символ
+// console.log(q.charAt(1));
+
+
+
+// var cake = "cake";
+
+// console.log(cake.charAt(1));
+
+var l = "some str";
+console.log(l.charAt(2));
+
+var something = "five strange words";
+
+// Метод вызова символа из строки по индексу
+console.log(something.charAt(5));
+
+// Метод подсчета длины строки 
+console.log(something.length);
+
+// Метод не изменяет исходную строку
+console.log(l.toUpperCase());
+
+console.log(l.valueOf["s"]);
+
+// Логический тип данных 
+// Bool 
+// true and false
+
+// console.log(s.charAt(0));
+
+console.log(typeof l);
+
+console.log(l.toUpperCase());
+
+// bool type of data
+
+// === => что информация слева совпадает не только по строковому типу
+// но и по типу данных
+
+console.log(5 === '5');
+
+console.log(5 === 5);
+
+s = 1;
+
+if (s) {
+    console.log("Ok");
+}
+
+if (s) {
+    console.log("I don't know... what to say? \nfuck")
+}
+
+var cake = "Cat it's cool :-)";
+
+// some metods
+
+console.log("---")
+
+// Метод поиска символа в строке
+console.log(cake.charAt(1));
+
+// Чтобы запустить метод нужно прописать в конце ()
+console.log(cake.toUpperCase());
+// Обратный метод
+console.log(cake.toLowerCase());
+
+// Как работает метод replace? 
+// console.log(cake.replace("cat" "aphanasiy"))
+
+// Метод подсчета кол-во символов в строке 
+console.log(cake.length);
+
+var num = 25;
+// Метод подсчета квадратного корня из числа
+console.log(Math.sqrt(num))
+
+console.log("---")
+
+
 
 
 
