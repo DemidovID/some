@@ -459,11 +459,13 @@ body {
 }
 
 .wrapper {
+    padding: 0 15px;    
     max-width: 1060px;
     margin: 0 auto;
 }
 
 .wrapper-full {
+    padding: 0 15px;
     max-width: 1262px;
     margin: 0 auto;
 }
@@ -534,6 +536,35 @@ body {
 
 .header__point-link:hover, .header__point-link:active, .header__point-link:focus {
     opacity: .75;
+}
+
+.header__burger {
+    display: none;
+    width: 36px;
+    height: 26px;
+    position: relative;
+}
+
+.burger__line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+}
+
+.burger__line_1 {
+    top: 0;
+}
+
+.burger__line_2 {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger__line_3 {
+    bottom: 0;  
 }
 /* end header */
 
@@ -1000,6 +1031,7 @@ body {
     line-height: 24px;
     text-decoration: none;
     color: white;
+    transition: .2s all;
 }
 
 .footer__nav-link:hover, .footer__nav-link:focus, .footer__nav-link:active {
@@ -1007,31 +1039,68 @@ body {
 }
 /* Footer end */
 
-/* Test-block start */
-.list-block {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5px 5px;
-    margin-top: 100px;
-    margin-bottom: 200px;
-    /* ? */
-    text-align: center;
+/* Media start */
+@media screen and (max-width: 767px){
+    .header__nav_close {
+        position: absolute;
+        width: 42px;
+        height: 30px;
+        top: 20px;
+        right: 20px;
+        z-index: 16;    
+    }
+
+    .header__nav_close-line {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        top: 50%;
+    }
+
+    .header__nav_close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header__nav_close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+    
+    .header__burger {
+        display: block;
+    }
+
+    .header__nav {
+        padding: 75px;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #1d2d3a;
+        z-index: 15;
+        transform: translateX(100%);
+        transition: .2s all linear;
+    }
+
+    .header__nav-active {
+        transform: translateX(0);
+    }
+
+    .header__point {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .header__point:last-child {
+        margin-bottom: 0;
+    }
+
+    .header__point-link {
+        font-size: 42px;
+        line-height: 48px;
+    }
 }
-
-.grid {
-    width: 500px;
-    height: 30px;
-    border: 1px solid black;
-    background: tomato;
-    color: white;
-    overflow: scroll;
-}
-/* Test-block end */
-
-/* grid... */
-
-.none {
-    display: grid;
-}
-
-/*  */
+/* Media end */
