@@ -1040,7 +1040,7 @@ body {
 /* Footer end */
 
 /* Media start */
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .header__nav_close {
         position: absolute;
         width: 42px;
