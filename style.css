@@ -1006,3 +1006,32 @@ body {
     opacity: .85;
 }
 /* Footer end */
+
+/* Test-block start */
+.list-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px 5px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    /* ? */
+    text-align: center;
+}
+
+.grid {
+    width: 500px;
+    height: 30px;
+    border: 1px solid black;
+    background: tomato;
+    color: white;
+    overflow: scroll;
+}
+/* Test-block end */
+
+/* grid... */
+
+.none {
+    display: grid;
+}
+
+/*  */

@@ -12,8 +12,68 @@ body {
 }
 
 .box {
+    /* margin-bottom: 200px; */
     display: inline-block;
     background-color: yellow;
     width: 200px;
     height: 200px;
 }
+
+.box-2 {
+    height: 50px;
+    background: yellow;
+}
+
+/* videos start */
+/* .wrapper-video {
+    margin-bottom: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.video__empty-block {
+    padding-top: 56.25%;
+}
+
+.video__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+/* Videos start */
+
+/* Download a video on the WEB-site */
+
+.wrapper-video {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.empty-video {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 56.25%;
+    border: 10px solid black;
+}
+
+/* .video-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+.box-3 {
+    position: absolute;
+    background: yellow;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 99%;
+}
+
+/* Download a video on the WEB-site */

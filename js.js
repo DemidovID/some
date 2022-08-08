@@ -287,6 +287,32 @@ console.log(Math.sqrt(num))
 
 console.log("---")
 
+// bool 
+// true or false
+
+FV = true;
+
+console.log(FV);
+console.log(FV);
+
+console.log(5 === 5);
+
+// const cat = new Number{
+//     name = 'Aphanasiy'
+//     color = 'orange'
+//     age = 4;
+// }
+
+// console.log(cat);
+
+// var cat = 1;
+
+var cat = new Number("Are you a cat?")
+
+console.log(typeof cat);
+
+console.log(cat);
+
 
 
 
