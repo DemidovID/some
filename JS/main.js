@@ -13,12 +13,27 @@
 (function () {
     const burgerItem = document.querySelector('.burger');
     const menuCloseItem = document.querySelector('.header__nav_close')
-    const menu = document.querySelector('.header__nav');
+    const menuItem = document.querySelector('.header__nav');
 
     burgerItem.addEventListener('click', () => {
-        menu.classList.add('header__nav-active');
+        menuItem.classList.add('header__nav-active');
     });
+
     menuCloseItem.addEventListener('click', () => {
-        menu.classList.remove('header__nav-active');
+        menuItem.classList.remove('header__nav-active');
     });
 }());
+
+
+// (function () {
+//     const burgerItem = document.querySelector('.burger');
+//     const menuCloseItem = document.querySelector('.header__nav_close')
+//     const menu = document.querySelector('.header__nav');
+
+//     burgerItem.addEventListener('click', () => {
+//         menu.classList.add('header__nav-active');
+//     });
+//     menuCloseItem.addEventListener('click', () => {
+//         menu.classList.remove('header__nav-active');
+//     });
+// }());

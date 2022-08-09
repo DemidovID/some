@@ -505,7 +505,6 @@ body {
 }
 
 .header__menu-flex {
-    /* отступ сверху */
     padding-top: 18px;
     display: flex;
     flex-wrap: wrap;
@@ -547,11 +546,11 @@ body {
 
 .burger__line {
     display: block;
-    width: 100%;
+    width: 100%;    
     height: 2px;
     background-color: white;
-    position: absolute;
-    left: 0;
+    position: absolute; 
+    left: 0; 
 }
 
 .burger__line_1 {
@@ -1039,15 +1038,81 @@ body {
 }
 /* Footer end */
 
+
 /* Media start */
 @media screen and (max-width: 767px) {
+    .header__nav_close {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        top: 20px;
+        right: 20px;
+        z-index: 12;
+    }
+
+    .header__nav_close-line {
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+    }
+
+    .header__nav_close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header__nav_close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .header__nav {
+        padding: 75px;  
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #1d2d3a;
+        z-index: 11;
+        transform: translateX(100%);
+        transition: .2s all linear;
+    }
+
+    .header__nav-active {
+        transform: translateX(0);
+    }
+
+    .header__point {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .header__point-link {
+        font-size: 42px;
+        line-height: 48px;
+        margin-bottom: 15px;    
+    }
+
+    .header__point-link:last-child {
+        margin-bottom: 0;
+    }
+}
+/* Media end */
+
+/* Media start */
+/* @media screen and (max-width: 767px) {
     .header__nav_close {
         position: absolute;
         width: 42px;
         height: 30px;
         top: 20px;
         right: 20px;
-        z-index: 16;    
+        z-index: 16;
     }
 
     .header__nav_close-line {
@@ -1102,5 +1167,5 @@ body {
         font-size: 42px;
         line-height: 48px;
     }
-}
+} */
 /* Media end */
